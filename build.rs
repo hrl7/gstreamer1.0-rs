@@ -1,6 +1,6 @@
 #[cfg(target_os="macos")]
 fn build_flags(){
-	println!("cargo:rustc-flags= -L framework=/Library/Frameworks");
+	println!("cargo:rustc-flags= -l glib-2.0 -l gobject-2.0 -l gstreamer-1.0 -l gstbase-1.0");
 }
 
 
